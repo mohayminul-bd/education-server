@@ -301,7 +301,7 @@ async function run() {
         if (!course || course.authorEmail !== email) {
           return res
             .status(403)
-            .send({ error: true, message: "Access denied" });
+            .send({ error: true, message: "Access denied." });
         }
 
         const result = await courseCollection.deleteOne({
