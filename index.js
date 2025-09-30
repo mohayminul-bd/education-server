@@ -357,7 +357,7 @@ async function run() {
       if (count >= 3) {
         return res.status(403).send({
           error: true,
-          message: "You can enroll in only 3 courses at a time",
+          message: "You can Enroll in only 3 Courses at a time",
         });
       }
 
