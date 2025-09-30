@@ -155,6 +155,7 @@ async function run() {
       }
     });
 
+    // courses api
     app.post("/api/courses", async (req, res) => {
       const data = req.body;
       const result = await courseCollection.insertOne(data);
