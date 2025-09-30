@@ -324,7 +324,7 @@ async function run() {
       if (!course) {
         return res
           .status(404)
-          .send({ error: true, message: "Course not found" });
+          .send({ error: true, message: "course not found" });
       }
 
       if (course.authorEmail === email) {
@@ -433,7 +433,7 @@ run().catch(console.dir);
 
 // Basic route
 app.get("/", (req, res) => {
-  res.send("🚀 Forum Server is running...");
+  res.send("🚀 Education Server is running...");
 });
 
 // Start server
