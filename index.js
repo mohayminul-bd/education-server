@@ -426,7 +426,7 @@ async function run() {
     await client.db("admin").command({ ping: 1 });
     console.log("✅ Successfully connected to MongoDB!");
   } catch (error) {
-    console.error("❌ Error connecting to MongoDB:", error);
+    console.error("❌ Error Connecting to MongoDB:", error);
   }
 }
 run().catch(console.dir);
