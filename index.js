@@ -241,6 +241,7 @@ async function run() {
       }
     );
 
+    // Update course
     app.get(
       "/api/edit-course/:id",
       verifyFirebaseToken,
@@ -288,6 +289,7 @@ async function run() {
       }
     );
 
+    // delete course
     app.delete(
       "/api/delete-course/:id",
       verifyFirebaseToken,
@@ -313,6 +315,7 @@ async function run() {
       }
     );
 
+    // course enrol
     app.post("/api/enroll", verifyFirebaseToken, async (req, res) => {
       const { email, courseId } = req.body;
 
